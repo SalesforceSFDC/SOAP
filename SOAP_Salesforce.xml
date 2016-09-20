@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xds="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+	<env:Body>
+		<n1:login xmlns:n1="urn:enterprise.soap.sforce.com">
+			<n1:username>USER</n1:username>
+			<n1:password>PASSWORD + TOKEN</n1:password>
+		</n1:login>
+	</env:Body>
+</env:Envelope>
+
+
+<?<?xml version="1.0" encoding="UTF-8"?>
+<soapen:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns="urn:enterprise.soap.sforce.com"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<soapenv:Body>
+			<loginRespone>
+				<result>
+					<metadataServerUrl>_</metadataServerUrl>
+					<passwordExpired>false</passwordExpired>
+					<sandbox>false</sandbox>
+					<serverUrl>https:na22.salesforce.com/_</serverUrl>
+					<sessionId>fggg_</sessionId>
+					<userId>0000</userId>
+				</result>
+			</loginRespone>
+		</soapenv:Body>
+	</soapen:Envelope>
+	
