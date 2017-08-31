@@ -1,0 +1,68 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com" xmlns:urn1="urn:sobject.enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:EmailHeader>
+         <urn:triggerAutoResponseEmail>?</urn:triggerAutoResponseEmail>
+         <urn:triggerOtherEmail>?</urn:triggerOtherEmail>
+         <urn:triggerUserEmail>?</urn:triggerUserEmail>
+      </urn:EmailHeader>
+      <urn:PackageVersionHeader>
+         <!--Zero or more repetitions:-->
+         <urn:packageVersions>
+            <urn:majorNumber>?</urn:majorNumber>
+            <urn:minorNumber>?</urn:minorNumber>
+            <urn:namespace>?</urn:namespace>
+         </urn:packageVersions>
+      </urn:PackageVersionHeader>
+      <urn:DebuggingHeader>
+         <!--Zero or more repetitions:-->
+         <urn:categories>
+            <urn:category>?</urn:category>
+            <urn:level>?</urn:level>
+         </urn:categories>
+         <urn:debugLevel>?</urn:debugLevel>
+      </urn:DebuggingHeader>
+      <urn:LocaleOptions>
+         <!--Optional:-->
+         <urn:language>?</urn:language>
+         <!--Optional:-->
+         <urn:localizeErrors>?</urn:localizeErrors>
+      </urn:LocaleOptions>
+      <urn:DuplicateRuleHeader>
+         <urn:allowSave>?</urn:allowSave>
+         <urn:includeRecordDetails>?</urn:includeRecordDetails>
+         <urn:runAsCurrentUser>?</urn:runAsCurrentUser>
+      </urn:DuplicateRuleHeader>
+      <urn:AllOrNoneHeader>
+         <urn:allOrNone>?</urn:allOrNone>
+      </urn:AllOrNoneHeader>
+      <urn:StreamingEnabledHeader>
+         <urn:streamingEnabled>?</urn:streamingEnabled>
+      </urn:StreamingEnabledHeader>
+      <urn:DisableFeedTrackingHeader>
+         <urn:disableFeedTracking>?</urn:disableFeedTracking>
+      </urn:DisableFeedTrackingHeader>
+      <urn:AllowFieldTruncationHeader>
+         <urn:allowFieldTruncation>?</urn:allowFieldTruncation>
+      </urn:AllowFieldTruncationHeader>
+      <urn:MruHeader>
+         <urn:updateMru>?</urn:updateMru>
+      </urn:MruHeader>
+      <urn:AssignmentRuleHeader>
+         <urn:assignmentRuleId>?</urn:assignmentRuleId>
+         <urn:useDefaultRule>?</urn:useDefaultRule>
+      </urn:AssignmentRuleHeader>
+      <urn:SessionHeader>
+         <urn:sessionId>?</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:create>
+         <!--Zero or more repetitions:-->
+         <urn:sObjects>
+            <!--Zero or more repetitions:-->
+            <urn1:fieldsToNull>?</urn1:fieldsToNull>
+            <urn1:Id>?</urn1:Id>
+         </urn:sObjects>
+      </urn:create>
+   </soapenv:Body>
+</soapenv:Envelope>
